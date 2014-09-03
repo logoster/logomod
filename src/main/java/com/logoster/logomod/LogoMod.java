@@ -26,32 +26,11 @@ public class LogoMod
     	
     	ModBlocks.init();
     	
-    	GameRegistry.addRecipe(new ItemStack(Blocks.obsidian), new Object[]{
-    		"AAA",
-    		"AAA",
-    		"AAA",
-    		'A', Items.cookie
-    	});
-    	GameRegistry.addRecipe(new ItemStack(Items.apple, 4), new Object[]{
-    		"AA",
-    		"AA",
-    		'A', Blocks.cobblestone
-    	});
-    	GameRegistry.addRecipe(new ItemStack(Items.dye, 2, 15), new Object[]{
-    		"AB ",
-    		"AAC",
-    		"A  ",
-    		'A', Items.cookie, 'B', Blocks.dirt, 'C', new ItemStack(Items.dye,1,1)
-    	});
     	GameRegistry.addRecipe(new ItemStack(ModBlocks.CustomLogo, 4), new Object[]{
     		"ABA",
-    		"BAB",
+    		"BBB",
     		"ABA",
     		'A', Blocks.stonebrick, 'B', Blocks.coal_block
     	});
-    	GameRegistry.addShapelessRecipe(new ItemStack(Items.dye, 2, 1),new Object[]{
-    		new ItemStack(Items.dye, 1, 1), Items.redstone
-    	});
-    	GameRegistry.addSmelting(new ItemStack(Items.arrow), new ItemStack(Items.diamond), 1.0F);
     }
 }
